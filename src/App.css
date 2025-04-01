@@ -1,0 +1,77 @@
+#root {
+    max-width: 1280px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formElement {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    margin: 2% 0%;
+    padding: 0% 1%;
+}
+
+.formContent {
+
+    display: flex;
+    width: 100%
+}
+
+.nbrPlayer {
+    font-weight: bold;
+}
+
+.colorElement {
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/*.cardsPage {
+
+}*/
+.minecraftApiPage{
+    margin: 0 30%;
+
+}
+.colorPage{
+    margin: 0 30%;
+
+}
+
+.cardsStatsPage .formContent, 
+.cardsDesksPage .formContent {
+    justify-content: center;
+
+}
+.cardsDesksPage input[type=button]{
+
+    margin: 2% auto;
+   width: 20%;
+
+
+}
+.error{
+    color: red;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.pie {
+    margin: 0 20%;
+}
+.toBold{
+    font-weight: bold;
+}
