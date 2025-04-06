@@ -3,6 +3,7 @@ import './../App.css'
 import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
 import CircularProgress from '@mui/material/CircularProgress';
 import { Link } from '@mui/material';
+import { TbWorldX, TbWorldCheck } from 'react-icons/tb';
 
 const backIcon = {
     color: '#fff',
@@ -83,7 +84,7 @@ function MinecraftApi() {
                         minecraftData.online ? (
                             minecraftData.players ? (
                                 <>
-                                    <h2>🟢{minecraftData.host}</h2>
+                                    <h2><TbWorldCheck color='green' /> {minecraftData.host}</h2>
                                     <p>Il y a <span className='nbrPlayer'>{minecraftData.players.online}</span> joueurs en ligne</p>
                                     {minecraftData.players.list && minecraftData.players.list.length > 0 ? (
                                         <table>
@@ -166,7 +167,7 @@ function MinecraftApi() {
                             )
                         ) : (
                             <>
-                                <h2>🔴{minecraftData.host}</h2>
+                                <h2><TbWorldX color='red'/> {minecraftData.host}</h2>
                                 <p>Le serveur est hors ligne ou aucune donnée n'est disponible.</p>
                             </>
                         )
